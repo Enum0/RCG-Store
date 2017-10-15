@@ -57,6 +57,8 @@ class ViewControllerNavigator: UIViewController {
     }
     
     @IBAction func showFavoriteApp(_ sender: Any) {
+        name = favoriteAppButton.currentTitle!
+        performSegue(withIdentifier: "screenWV", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

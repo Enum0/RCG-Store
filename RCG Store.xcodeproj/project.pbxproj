@@ -14,6 +14,7 @@
 		841F04BF1F833043006BA647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F04BD1F833043006BA647 /* LaunchScreen.storyboard */; };
 		841F04C71F8331E3006BA647 /* splashscreen_6p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841F04C61F8331E3006BA647 /* splashscreen_6p.jpg */; };
 		84484F121F925A8D00F6E88E /* ViewControllerNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84484F111F925A8D00F6E88E /* ViewControllerNavigator.swift */; };
+		849808411F939D9600471F41 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849808401F939D1300471F41 /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		841F04C01F833043006BA647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841F04C61F8331E3006BA647 /* splashscreen_6p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splashscreen_6p.jpg; sourceTree = "<group>"; };
 		84484F111F925A8D00F6E88E /* ViewControllerNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerNavigator.swift; sourceTree = "<group>"; };
+		849808401F939D1300471F41 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,17 @@
 				841F04BD1F833043006BA647 /* LaunchScreen.storyboard */,
 				841F04C01F833043006BA647 /* Info.plist */,
 				841F04C61F8331E3006BA647 /* splashscreen_6p.jpg */,
+				8498083F1F939CE900471F41 /* Fonts */,
 			);
 			path = "RCG Store";
+			sourceTree = "<group>";
+		};
+		8498083F1F939CE900471F41 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				849808401F939D1300471F41 /* Montserrat-Regular.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849808411F939D9600471F41 /* Montserrat-Regular.ttf in Resources */,
 				841F04BF1F833043006BA647 /* LaunchScreen.storyboard in Resources */,
 				841F04BC1F833043006BA647 /* Assets.xcassets in Resources */,
 				841F04C71F8331E3006BA647 /* splashscreen_6p.jpg in Resources */,

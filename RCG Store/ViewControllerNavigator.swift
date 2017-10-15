@@ -8,12 +8,11 @@
 
 import UIKit
 
-class ViewControllerNavigator: UIViewController {
+class ViewControllerNavigator: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var favoriteAppButton: UIButton!
-    @IBOutlet weak var favoriteAppLabel: UILabel!
-    
+    @IBOutlet weak var searchappLabel: UILabel!
     
     var name = String()
     
@@ -26,11 +25,9 @@ class ViewControllerNavigator: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         let x = UserDefaults.standard.value(forKey: "favoriteApp") as? String
         if x != nil {
-            favoriteAppLabel.isHidden = false
             favoriteAppButton.isHidden = false
             favoriteAppButton.setTitle(x, for: .normal)
         } else {
-            favoriteAppLabel.isHidden = true
             favoriteAppButton.isHidden = true
         }
     }
@@ -41,7 +38,7 @@ class ViewControllerNavigator: UIViewController {
     }
     
     @IBAction func showCurrentApp(_ sender: Any) {
-        if textField.text != "" {
+        if textField.text != "" && textField.text != "Application ID" {
             name = textField.text!
             performSegue(withIdentifier: "screenWV", sender: self)
             
@@ -66,6 +63,20 @@ class ViewControllerNavigator: UIViewController {
         secondController.passedURL = "https://app.rcg.agency/" + name
         
         debugPrint(secondController.passedURL)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        showCurrentApp(self)
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
 }

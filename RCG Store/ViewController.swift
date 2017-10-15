@@ -40,7 +40,11 @@ class ViewController: UIViewController, UIWebViewDelegate {
     }
 
     @IBAction func backButton(_ sender: Any) {
-    performSegue(withIdentifier: "backSegue", sender: nil)
+        performSegue(withIdentifier: "backSegue", sender: nil)
+    }
+    
+    @IBAction func refreshButton(_ sender: Any) {
+        webView.reload()
     }
 
 }

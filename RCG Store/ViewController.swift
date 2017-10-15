@@ -11,21 +11,29 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var webView: UIWebView!
+    var passedURL = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
-        let myURL = URL(string: "https://app.rcg.agency/")
-        let myURLrequest = URLRequest(url: myURL!)
-        webView.loadRequest(myURLrequest)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        let myURL = URL(string: passedURL)
+        if myURL != nil {
+            let myURLrequest = URLRequest(url: myURL!)
+            webView.loadRequest(myURLrequest)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func backButton(_ sender: Any) {
+    performSegue(withIdentifier: "backSegue", sender: nil)
+    }
 
 }
 

@@ -13,6 +13,7 @@
 		841F04BC1F833043006BA647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841F04BB1F833043006BA647 /* Assets.xcassets */; };
 		841F04BF1F833043006BA647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F04BD1F833043006BA647 /* LaunchScreen.storyboard */; };
 		841F04C71F8331E3006BA647 /* splashscreen_6p.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841F04C61F8331E3006BA647 /* splashscreen_6p.jpg */; };
+		84484F121F925A8D00F6E88E /* ViewControllerNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84484F111F925A8D00F6E88E /* ViewControllerNavigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		841F04BE1F833043006BA647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841F04C01F833043006BA647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841F04C61F8331E3006BA647 /* splashscreen_6p.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splashscreen_6p.jpg; sourceTree = "<group>"; };
+		84484F111F925A8D00F6E88E /* ViewControllerNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerNavigator.swift; path = ../ViewControllerNavigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				841F04B41F833043006BA647 /* AppDelegate.swift */,
 				841F04B61F833043006BA647 /* ViewController.swift */,
+				84484F111F925A8D00F6E88E /* ViewControllerNavigator.swift */,
 				841F04B81F833043006BA647 /* Main.storyboard */,
 				841F04BB1F833043006BA647 /* Assets.xcassets */,
 				841F04BD1F833043006BA647 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84484F121F925A8D00F6E88E /* ViewControllerNavigator.swift in Sources */,
 				841F04B71F833043006BA647 /* ViewController.swift in Sources */,
 				841F04B51F833043006BA647 /* AppDelegate.swift in Sources */,
 			);

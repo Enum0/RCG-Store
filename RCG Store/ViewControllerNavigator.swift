@@ -11,6 +11,9 @@ import UIKit
 class ViewControllerNavigator: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var favoriteAppButton: UIButton!
+    @IBOutlet weak var favoriteAppLabel: UILabel!
+    
     
     var name = String()
     
@@ -18,6 +21,18 @@ class ViewControllerNavigator: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let x = UserDefaults.standard.value(forKey: "favoriteApp") as? String
+        if x != nil {
+            favoriteAppLabel.isHidden = false
+            favoriteAppButton.isHidden = false
+            favoriteAppButton.setTitle(x, for: .normal)
+        } else {
+            favoriteAppLabel.isHidden = true
+            favoriteAppButton.isHidden = true
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +44,10 @@ class ViewControllerNavigator: UIViewController {
         if textField.text != "" {
             name = textField.text!
             performSegue(withIdentifier: "screenWV", sender: self)
+            
+            UserDefaults.standard.set(name, forKey: "favoriteApp")
+            debugPrint(UserDefaults.standard.value(forKey: "favoriteApp") as Any)
+            
         }
     }
     
@@ -37,9 +56,13 @@ class ViewControllerNavigator: UIViewController {
         performSegue(withIdentifier: "screenWV", sender: self)
     }
     
+    @IBAction func showFavoriteApp(_ sender: Any) {
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var secondController = segue.destination as! ViewController
+        let secondController = segue.destination as! ViewController
         secondController.passedURL = "https://app.rcg.agency/" + name
+        
         debugPrint(secondController.passedURL)
     }
 

@@ -10,9 +10,16 @@
 		841F04B51F833043006BA647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F04B41F833043006BA647 /* AppDelegate.swift */; };
 		841F04B71F833043006BA647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F04B61F833043006BA647 /* ViewController.swift */; };
 		841F04BA1F833043006BA647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F04B81F833043006BA647 /* Main.storyboard */; };
-		841F04BC1F833043006BA647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841F04BB1F833043006BA647 /* Assets.xcassets */; };
-		841F04BF1F833043006BA647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F04BD1F833043006BA647 /* LaunchScreen.storyboard */; };
 		84484F121F925A8D00F6E88E /* ViewControllerNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84484F111F925A8D00F6E88E /* ViewControllerNavigator.swift */; };
+		845753531F9BAFA60038B594 /* ViewControllerNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84484F111F925A8D00F6E88E /* ViewControllerNavigator.swift */; };
+		845753541F9BAFA60038B594 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F04B61F833043006BA647 /* ViewController.swift */; };
+		845753551F9BAFA60038B594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841F04B41F833043006BA647 /* AppDelegate.swift */; };
+		845753581F9BAFA60038B594 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849808401F939D1300471F41 /* Montserrat-Regular.ttf */; };
+		845753591F9BAFA60038B594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F04BD1F833043006BA647 /* LaunchScreen.storyboard */; };
+		8457535B1F9BAFA60038B594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F04B81F833043006BA647 /* Main.storyboard */; };
+		845753621F9BB05B0038B594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841F04BB1F833043006BA647 /* Assets.xcassets */; };
+		845753631F9BB0610038B594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841F04BB1F833043006BA647 /* Assets.xcassets */; };
+		845753641F9BBC4D0038B594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841F04BD1F833043006BA647 /* LaunchScreen.storyboard */; };
 		849808411F939D9600471F41 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 849808401F939D1300471F41 /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -25,11 +32,20 @@
 		841F04BE1F833043006BA647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		841F04C01F833043006BA647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84484F111F925A8D00F6E88E /* ViewControllerNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerNavigator.swift; sourceTree = "<group>"; };
+		8457535F1F9BAFA60038B594 /* RCG Store-iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RCG Store-iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		845753611F9BAFA60038B594 /* RCG Store-iPad.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RCG Store-iPad.plist"; path = "/Users/Admin/Documents/Hobby/xCode/RCG Store/RCG Store-iPad.plist"; sourceTree = "<absolute>"; };
 		849808401F939D1300471F41 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		841F04AE1F833041006BA647 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845753561F9BAFA60038B594 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +58,7 @@
 		841F04A81F833041006BA647 = {
 			isa = PBXGroup;
 			children = (
+				845753601F9BAFA60038B594 /* Resources-iPad */,
 				841F04B31F833043006BA647 /* RCG Store */,
 				841F04B21F833043006BA647 /* Products */,
 			);
@@ -51,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				841F04B11F833043006BA647 /* RCG Store.app */,
+				8457535F1F9BAFA60038B594 /* RCG Store-iPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +86,14 @@
 				8498083F1F939CE900471F41 /* Fonts */,
 			);
 			path = "RCG Store";
+			sourceTree = "<group>";
+		};
+		845753601F9BAFA60038B594 /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+				845753611F9BAFA60038B594 /* RCG Store-iPad.plist */,
+			);
+			name = "Resources-iPad";
 			sourceTree = "<group>";
 		};
 		8498083F1F939CE900471F41 /* Fonts */ = {
@@ -98,6 +124,23 @@
 			productReference = 841F04B11F833043006BA647 /* RCG Store.app */;
 			productType = "com.apple.product-type.application";
 		};
+		845753511F9BAFA60038B594 /* RCG Store-iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8457535C1F9BAFA60038B594 /* Build configuration list for PBXNativeTarget "RCG Store-iPad" */;
+			buildPhases = (
+				845753521F9BAFA60038B594 /* Sources */,
+				845753561F9BAFA60038B594 /* Frameworks */,
+				845753571F9BAFA60038B594 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RCG Store-iPad";
+			productName = "RCG Store";
+			productReference = 8457535F1F9BAFA60038B594 /* RCG Store-iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -112,6 +155,9 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ZR53XJ4986;
 						ProvisioningStyle = Automatic;
+					};
+					845753511F9BAFA60038B594 = {
+						DevelopmentTeam = AYT5K6DR25;
 					};
 				};
 			};
@@ -129,6 +175,7 @@
 			projectRoot = "";
 			targets = (
 				841F04B01F833041006BA647 /* RCG Store */,
+				845753511F9BAFA60038B594 /* RCG Store-iPad */,
 			);
 		};
 /* End PBXProject section */
@@ -139,9 +186,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				849808411F939D9600471F41 /* Montserrat-Regular.ttf in Resources */,
-				841F04BF1F833043006BA647 /* LaunchScreen.storyboard in Resources */,
-				841F04BC1F833043006BA647 /* Assets.xcassets in Resources */,
+				845753641F9BBC4D0038B594 /* LaunchScreen.storyboard in Resources */,
+				845753631F9BB0610038B594 /* Assets.xcassets in Resources */,
 				841F04BA1F833043006BA647 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845753571F9BAFA60038B594 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845753581F9BAFA60038B594 /* Montserrat-Regular.ttf in Resources */,
+				845753591F9BAFA60038B594 /* LaunchScreen.storyboard in Resources */,
+				845753621F9BB05B0038B594 /* Assets.xcassets in Resources */,
+				8457535B1F9BAFA60038B594 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +213,16 @@
 				84484F121F925A8D00F6E88E /* ViewControllerNavigator.swift in Sources */,
 				841F04B71F833043006BA647 /* ViewController.swift in Sources */,
 				841F04B51F833043006BA647 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845753521F9BAFA60038B594 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845753531F9BAFA60038B594 /* ViewControllerNavigator.swift in Sources */,
+				845753541F9BAFA60038B594 /* ViewController.swift in Sources */,
+				845753551F9BAFA60038B594 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "agency.rcg.RCG-Store";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -297,7 +365,37 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "agency.rcg.RCG-Store";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8457535D1F9BAFA60038B594 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iPad";
+				DEVELOPMENT_TEAM = AYT5K6DR25;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources-iPad/RCG Store-iPad.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "agency.rcg.RCG-Store-iPad";
+				PRODUCT_NAME = "RCG Store-iPad";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		8457535E1F9BAFA60038B594 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-iPad";
+				DEVELOPMENT_TEAM = AYT5K6DR25;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources-iPad/RCG Store-iPad.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "agency.rcg.RCG-Store-iPad";
+				PRODUCT_NAME = "RCG Store-iPad";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -318,6 +416,15 @@
 			buildConfigurations = (
 				841F04C41F833043006BA647 /* Debug */,
 				841F04C51F833043006BA647 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8457535C1F9BAFA60038B594 /* Build configuration list for PBXNativeTarget "RCG Store-iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8457535D1F9BAFA60038B594 /* Debug */,
+				8457535E1F9BAFA60038B594 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
